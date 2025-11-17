@@ -23244,19 +23244,20 @@ blockquote cite {
 /* background block */
 #process-section .eac-bg{
   position: relative;
-  background-image: url('path/to/your-image.jpg'); /* <-- REPLACE with your image path */
+  background-image: url('/assets/img/services/work-process-image.jpg'); /* <-- REPLACE with your image path */
   background-size: cover;
   background-position: center;
   color: #fff;
   padding: 56px 0;
   overflow: hidden;
+  border-radius: 30px;
 }
 
 /* overlay to darken for contrast */
 #process-section .eac-overlay{
   position:absolute;
   inset:0;
-  background: linear-gradient(90deg, rgba(7,7,7,0.75) 0%, rgba(10,10,10,0.6) 50%, rgba(7,7,7,0.75) 100%);
+  background: linear-gradient(90deg, rgba(7, 7, 7, 0.797) 0%, rgba(10, 10, 10, 0.66) 50%, rgba(7, 7, 7, 0.918) 100%);
   mix-blend-mode: multiply;
   pointer-events:none;
 }
@@ -23273,7 +23274,7 @@ blockquote cite {
 
 /* eyebrow and headline */
 #process-section .eyebrow{
-  color: #f7c84a;
+  color: #a97c50;
   font-weight: 700;
   letter-spacing: 1px;
   margin: 0 0 8px;
@@ -23324,7 +23325,7 @@ blockquote cite {
   position: absolute;
   right: -6px;
   bottom: -6px;
-  background: #f7c84a;
+  background: #a97c50;
   color: #111;
   font-weight: 700;
   font-size: 14px;
