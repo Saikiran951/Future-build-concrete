@@ -55,7 +55,7 @@
   --tg-heading-color: #01022E;
   --tg-theme-primary: #a97c50;
   --tg-theme-secondary: #3c1912;
-  --tg-color-sky-blue: #00B2FF;
+  --tg-color-sky-blue: #3c1912;
   --tg-color-yellow-light: #FFB930;
   --tg-color-yellow-light-2: #F09E24;
   --tg-color-red-light: #DC0000;
@@ -23498,3 +23498,104 @@ blockquote cite {
 .ci-email {
     background-image: url("https://cdn-icons-png.flaticon.com/512/561/561127.png");
 }
+
+/* schedule pop-up starts */
+/* Modal Overlay */
+.__modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.45);
+  z-index: 1200;
+  padding: 20px;
+}
+
+/* Modal Box */
+.__modal {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  transform: translateY(10px) scale(.98);
+  opacity: 0;
+  transition: .2s ease;
+  position: relative;
+}
+
+.__modal-hidden { pointer-events: none; }
+
+/* Overlay visible */
+.__modal-overlay.__visible {
+  display: flex;
+}
+
+.__modal-overlay.__visible .__modal {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Close button */
+.__modal-close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Form */
+.__modal-form {
+  display: grid;
+  gap: 12px;
+}
+
+.__modal-form label {
+  font-size: 14px;
+}
+
+.__modal-form input,
+.__modal-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.__modal-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.__btn-primary {
+  background: #a97c50;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.__btn-ghost {
+  background: transparent;
+  border: 1px solid #aaa;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Feedback */
+.__modal-feedback {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #a97c50;
+}
+/* ends popup */

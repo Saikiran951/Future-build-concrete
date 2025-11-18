@@ -982,3 +982,72 @@ function aosAnimation() {
 
 
 })(jQuery);
+
+
+// schedule pop-up starts
+
+(function(){
+  const overlay = document.getElementById('__modal-overlay');
+  const modal = document.getElementById('__modal-schedule');
+
+  function openModal() {
+    overlay.classList.add('__visible');
+    modal.classList.remove('__modal-hidden');
+    overlay.setAttribute('aria-hidden','false');
+    const first = modal.querySelector('input');
+    if(first) first.focus();
+  }
+
+  function closeModal() {
+    overlay.classList.remove('__visible');
+    modal.classList.add('__modal-hidden');
+    overlay.setAttribute('aria-hidden','true');
+  }
+
+  // Close actions
+  overlay.addEventListener('click', e => { if(e.target === overlay) closeModal(); });
+  document.addEventListener('click', e => {
+    if(e.target.closest('.__modal-close') || e.target.closest('.__modal-cancel')) closeModal();
+  });
+  window.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
+
+  // Form submit (dummy)
+  const form = document.getElementById('__form-schedule');
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    const feedback = form.querySelector('.__modal-feedback');
+    feedback.textContent = "Submitting...";
+
+    setTimeout(() => {
+      feedback.textContent = "Schedule request sent!";
+      form.reset();
+      setTimeout(closeModal, 800);
+    }, 700);
+  });
+
+  // Detect your existing "Let’s Make a Schedule" button
+  function attachButtonListener() {
+    const els = document.querySelectorAll('a, button, [role="button"]');
+
+    els.forEach(el => {
+      if(el.__modalAttached) return;
+
+      const t = (el.textContent || '').toLowerCase();
+      if(t.includes("schedule")) {
+        el.addEventListener('click', e => {
+          e.preventDefault();
+          openModal();
+        });
+        el.__modalAttached = true;
+      }
+    });
+  }
+
+  attachButtonListener();
+
+  // Attach even if your site loads elements later
+  const observer = new MutationObserver(attachButtonListener);
+  observer.observe(document.body, {childList: true, subtree: true});
+
+})();
+// schedule pop-up ends
