@@ -108,18 +108,17 @@
                                         </li>
                                         <li class="menu-item-has-children"><a href="services.html">Services</a>
                                             <ul class="sub-menu">
-                                                <!-- <li><a href="services.html">Our Services</a></li> -->
-                                                <li><a href="M-15-dumping-grade.html">M-15 dumping grade</a></li>
-                                                <li><a href="M-20-Best-RMC-product-Robo-Sand-and-River-Sand.html">M-20
-                                                        Best RMC product Robo Sand and River Sand</a></li>
-                                                <li><a href="M-25-concrete-Robo-sand-and-River-sand.html">M-25 Concrete
-                                                        Robo sand and River sand</a></li>
-                                                <li><a href="M-30-high-strength-concrete.html">M-30 High Strength
+                                                <li><a href="M-40-very-high-strength-concrete.html">M-40 High Strength
                                                         Concrete</a></li>
                                                 <li><a href="M-35-high-strength-concrete.html">M-35 High Strength
                                                         Concrete</a></li>
-                                                <li><a href="M-40-very-high-strength-concrete.html">M-40 High Strength
+                                                <li><a href="M-30-high-strength-concrete.html">M-30 High Strength
                                                         Concrete</a></li>
+                                                <li><a href="M-25-concrete-Robo-sand-and-River-sand.html">M-25 Concrete
+                                                        Robo sand and River sand</a></li>
+                                                <li><a href="M-20-Best-RMC-product-Robo-Sand-and-River-Sand.html">M-20
+                                                        Best RMC product Robo Sand and River Sand</a></li>
+                                                <li><a href="M-15-dumping-grade.html">M-15 dumping grade</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
@@ -129,7 +128,8 @@
                                     <ul class="list-wrap">
 
                                         <li class="header-btn">
-                                            <a href="contact.html" class="tg-btn tg-btn-four tg-btn-five">Get a Quote
+                                            <a href="contact.html" class="tg-btn tg-btn-four tg-btn-five">Make a
+                                                Schedule
                                                 <img src="assets/img/icons/right_arrow02.svg" alt=""
                                                     class="injectable"></a>
                                         </li>
@@ -295,8 +295,8 @@
                                 <span property="itemListElement" typeof="ListItem">
                                     <a href="index.html">Home</a>
                                 </span>
-                                <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
-                                <span property="itemListElement" typeof="ListItem">About us</span>
+
+                                <!-- <span property="itemListElement" typeof="ListItem">About us</span> -->
                             </nav>
                         </div>
                     </div>
@@ -440,9 +440,20 @@
                             <div class="icon-wrap" aria-hidden="true">
                                 <!-- small clipboard icon -->
                                 <svg viewBox="0 0 24 24" class="icon">
-                                    <path d="M7 3h10v2H7zM9 7h6v2H9zM7 11h10v10H7z" fill="none" stroke="currentColor"
-                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <!-- Calendar frame -->
+                                        <rect x="3" y="4" width="18" height="17" rx="2" />
+                                        <!-- Top bar -->
+                                        <path d="M3 9h18" />
+                                        <!-- Calendar rings -->
+                                        <path d="M8 2v4M16 2v4" />
+                                        <!-- Small clock inside -->
+                                        <circle cx="12" cy="15" r="3" />
+                                        <path d="M12 15l1.5-1.5" />
+                                    </g>
                                 </svg>
+
                                 <span class="badge">1</span>
                             </div>
                             <h3 class="step-title">Schedule Your Appointment</h3>
@@ -452,10 +463,15 @@
                             <div class="icon-wrap" aria-hidden="true">
                                 <!-- chat / advice icon -->
                                 <svg viewBox="0 0 24 24" class="icon">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z" fill="none"
-                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="3" y="7" width="18" height="14" rx="2" />
+                                        <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
+                                        <path d="M3 12h18" />
+                                        <path d="M12 12v4" />
+                                    </g>
                                 </svg>
+
                                 <span class="badge">2</span>
                             </div>
                             <h3 class="step-title">Get Professional Advices</h3>
@@ -465,11 +481,17 @@
                             <div class="icon-wrap" aria-hidden="true">
                                 <!-- helmet/expert icon -->
                                 <svg viewBox="0 0 24 24" class="icon">
-                                    <path
-                                        d="M12 2a4 4 0 0 0-4 4v1H6a2 2 0 0 0-2 2v2h16V9a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"
-                                        fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="12" cy="6" r="3" />
+                                        <circle cx="5" cy="10" r="2.5" />
+                                        <circle cx="19" cy="10" r="2.5" />
+                                        <path d="M8 21v-1a4 4 0 0 1 8 0v1" />
+                                        <path d="M2.5 21v-1a3 3 0 0 1 5 0v1" />
+                                        <path d="M16.5 21v-1a3 3 0 0 1 5 0v1" />
+                                    </g>
                                 </svg>
+
                                 <span class="badge">3</span>
                             </div>
                             <h3 class="step-title">Meet Our Best Experts</h3>
@@ -479,13 +501,14 @@
                             <div class="icon-wrap" aria-hidden="true">
                                 <!-- gear / services icon -->
                                 <svg viewBox="0 0 24 24" class="icon">
-                                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="none" stroke="currentColor"
-                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path
-                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06A2 2 0 1 1 3.3 16.1l.06-.06A1.65 1.65 0 0 0 3.7 14.2 1.65 1.65 0 0 0 2.7 13H2a2 2 0 1 1 0-4h.7c.95 0 1.46-.85 1-1.51a1.65 1.65 0 0 0-.33-1.82L3.0 3.7A2 2 0 1 1 5.83.87l.06.06A1.65 1.65 0 0 0 7.71 1.3 1.65 1.65 0 0 0 9.2.3H9.3A2 2 0 1 1 13 2h-.09c-.6 0-1.12.32-1.4.81A1.65 1.65 0 0 0 10.3 4.3v.6a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06A2 2 0 1 1 18.7 8.9l-.06.06a1.65 1.65 0 0 0-.33 1.82c.44.66 1.46.73 2 .07z"
-                                        fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
+                                    <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M12 8a4 4 0 1 1 0 8a4 4 0 1 1 0-8z" />
+                                        <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2" />
+                                        <path d="M10.5 12.5l1.2 1.2 2.5-2.5" />
+                                    </g>
                                 </svg>
+
                                 <span class="badge">4</span>
                             </div>
                             <h3 class="step-title">Get Our Best Services</h3>
@@ -518,8 +541,8 @@
                                         <a href="tel:+91 9121666795">+91 9121666795</a>
                                     </div>
                                 </div>
-                                <a href="contact.html" class="tg-btn tg-border-btn ">Read More <img
-                                        src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a>
+                                <!-- <a href="contact.html" class="tg-btn tg-border-btn ">Read More <img
+                                        src="assets/img/icons/right_arrow.svg" alt="" class="injectable"></a> -->
                             </div>
                         </div>
                     </div>
@@ -551,141 +574,95 @@
         </section>
 
         <!-- team-area -->
-        <section class="team__area-three section-py-130">
+        <section class="team__area fix section-py-130">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="section__title mb-50 mb-md-30">
-                            <span class="sub-title">Core Team</span>
-                            <h2 class="title">Our expert team of Professionals here for you</h2>
+                        <div class="section__title white-title mb-50 mb-md-30">
+                            <span class="sub-title">MEET OUR TEAM</span>
+                            <h2 class="title">Meet our Specialized <br> team of experts</h2>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="section__content mb-50">
-                            <p>We provide reliable technical support, quality guidance, and end-to-end assistance to
-                                ensure your construction project is completed with confidence and precision.</p>
+                        <div class="section__content white-content mb-50">
+                            <p>Our leadership team brings years of experience, strong values, and a commitment to
+                                delivering high-quality concrete for every project we take on.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row gutter-y-30 justify-content-center">
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="team__item-three">
-                            <div class="team__thumb-three">
-                                <img src="assets/img/team/h3_team_img01.png" alt="img">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="team__item">
+                            <div class="team__thumb">
+                                <img src="assets/img/team/team_img01.png" alt="img">
                             </div>
-                            <div class="team__content-three">
-                                <h2 class="title"><a href="team-details.html">T. Mahesh
-                                    </a></h2>
+                            <div class="team__content">
+                                <h2 class="title"><a href="#">T. Mahesh</a></h2>
                                 <span>Managing Partner</span>
-                                <div class="team__social-three">
-                                    <ul class="list-wrap">
-                                        <li><a href="https://www.facebook.com/" target="_blank"><img
-                                                    src="assets/img/icons/facebook.svg" alt="" class="injectable"></a>
-                                        </li>
-                                        <li><a href="https://x.com/home" target="_blank"><img
-                                                    src="assets/img/icons/twitter.svg" alt="" class="injectable"></a>
-                                        </li>
-                                        <li><a href="https://www.instagram.com/futurebuildconcrete23/"
-                                                target="_blank"><img src="assets/img/icons/instagram.svg" alt=""
-                                                    class="injectable"></a>
-                                        </li>
-                                        <li><a href="https://www.pinterest.com/futurebuildconcrete/_profile/"
-                                                target="_blank"><img src="assets/img/icons/pinterest.svg" alt=""
-                                                    class="injectable"></a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
+                            <!-- <div class="team__social">
+                                <div class="social-toggle-icon">
+                                    <i class="fas fa-share-alt"></i>
+                                </div>
+                                <ul class="list-wrap">
+                                    <li><a href="https://www.facebook.com/" target="_blank"><img
+                                                src="assets/img/icons/facebook.svg" alt="" class="injectable"></a></li>
+                                    <li><a href="https://x.com/home" target="_blank"><img
+                                                src="assets/img/icons/twitter.svg" alt="" class="injectable"></a></li>
+                                    <li><a href="https://www.instagram.com/futurebuildconcrete23/" target="_blank"><img
+                                                src="assets/img/icons/instagram.svg" alt="" class="injectable"></a></li>
+                                    <li><a href="https://www.pinterest.com/" target="_blank"><img
+                                                src="assets/img/icons/pinterest.svg" alt="" class="injectable"></a></li>
+                                </ul>
+                            </div> -->
+
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="team__item-three">
-                            <div class="team__thumb-three">
-                                <img src="assets/img/team/h3_team_img03.png" alt="img">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="team__item">
+                            <div class="team__thumb">
+                                <img src="assets/img/team/team_img03.png" alt="img">
                             </div>
-                            <div class="team__content-three">
-                                <h2 class="title"><a href="team-details.html">A. Ramprasad Goud</a></h2>
+                            <div class="team__content">
+                                <h2 class="title"><a href="#">A. Ramprasad Goud</a></h2>
                                 <span>Managing Partner</span>
-                                <div class="team__social-three">
-                                    <ul class="list-wrap">
-                                        <li><a href="https://www.facebook.com/" target="_blank"><img
-                                                    src="assets/img/icons/facebook.svg" alt="" class="injectable"></a>
-                                        </li>
-                                        <li><a href="https://x.com/home" target="_blank"><img
-                                                    src="assets/img/icons/twitter.svg" alt="" class="injectable"></a>
-                                        </li>
-                                        <li><a href="https://www.instagram.com/futurebuildconcrete23/"
-                                                target="_blank"><img src="assets/img/icons/instagram.svg" alt=""
-                                                    class="injectable"></a>
-                                        </li>
-                                        <li><a href="https://www.pinterest.com/futurebuildconcrete/_profile/"
-                                                target="_blank"><img src="assets/img/icons/pinterest.svg" alt=""
-                                                    class="injectable"></a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="team__item-three">
-                            <div class="team__thumb-three">
-                                <img src="assets/img/team/h3_team_img03.png" alt="img">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="team__item">
+                            <div class="team__thumb">
+                                <img src="assets/img/team/team_img01.png" alt="img">
                             </div>
-                            <div class="team__content-three">
-                                <h2 class="title"><a href="team-details.html">N. Srinivasulu</a></h2>
+                            <div class="team__content">
+                                <h2 class="title"><a href="#">N. Srinivasulu</a></h2>
                                 <span>Managing Partner</span>
-                                <div class="team__social-three">
-                                    <ul class="list-wrap">
-                                        <li><a href="https://www.facebook.com/" target="_blank"><img
-                                                    src="assets/img/icons/facebook.svg" alt="" class="injectable"></a>
-                                        </li>
-                                        <li><a href="https://x.com/home" target="_blank"><img
-                                                    src="assets/img/icons/twitter.svg" alt="" class="injectable"></a>
-                                        </li>
-                                        <li><a href="https://www.instagram.com/futurebuildconcrete23/"
-                                                target="_blank"><img src="assets/img/icons/instagram.svg" alt=""
-                                                    class="injectable"></a>
-                                        </li>
-                                        <li><a href="https://www.pinterest.com/futurebuildconcrete/_profile/"
-                                                target="_blank"><img src="assets/img/icons/pinterest.svg" alt=""
-                                                    class="injectable"></a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="team__item-three">
-                            <div class="team__thumb-three">
-                                <img src="assets/img/team/h3_team_img03.png" alt="img">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="team__item">
+                            <div class="team__thumb">
+                                <img src="assets/img/team/team_img03.png" alt="img">
                             </div>
-                            <div class="team__content-three">
-                                <h2 class="title"><a href="team-details.html">K. Ramakrishna</a></h2>
+                            <div class="team__content">
+                                <h2 class="title"><a href="#">K. Ramakrishna</a></h2>
                                 <span>Managing Partner</span>
-                                <div class="team__social-three">
-                                    <ul class="list-wrap">
-                                        <li><a href="https://www.facebook.com/" target="_blank"><img
-                                                    src="assets/img/icons/facebook.svg" alt="" class="injectable"></a>
-                                        </li>
-                                        <li><a href="https://x.com/home" target="_blank"><img
-                                                    src="assets/img/icons/twitter.svg" alt="" class="injectable"></a>
-                                        </li>
-                                        <li><a href="https://www.instagram.com/futurebuildconcrete23/"
-                                                target="_blank"><img src="assets/img/icons/instagram.svg" alt=""
-                                                    class="injectable"></a>
-                                        </li>
-                                        <li><a href="https://www.pinterest.com/futurebuildconcrete/_profile/"
-                                                target="_blank"><img src="assets/img/icons/pinterest.svg" alt=""
-                                                    class="injectable"></a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
+                <div class="team__bottom-content text-center">
+                    <p>Backbone Of Our Company.</p>
+                </div>
+            </div>
+            <div class="team__shape-wrap">
+                <!-- <img src="assets/img/team/team_shape01.svg" alt="shape" data-aos="fade-down-left" data-aos-delay="400"> -->
+                <!-- <img src="assets/img/team/team_shape02.svg" alt="shape" data-aos="fade-up-right" data-aos-delay="400"> -->
+                <img src="assets/img/team/team_shape03.svg" alt="shape" class="rightToLeft">
             </div>
         </section>
         <!-- team-area-end -->
@@ -778,47 +755,24 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="swiper-slide">
-                                        <div class="testimonial__item">
-                                            <div class="testimonial__icon">
-                                                <img src="assets/img/icons/quote.svg" alt="icon" class="injectable">
-                                            </div>
-                                            <div class="testimonial__content">
-                                                <p>“Excellent content and a real sense of community among the
-                                                    participant
-                                                    all curated in a wonderful setting. It is clear effort goes into the
-                                                    organization and planning of the gatherings. ”</p>
-                                                <div class="testimonial__rating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <div class="testimonial__content-bottom">
-                                                    <h4 class="title">Mr.Robey Alexa</h4>
-                                                    <span>CEO, Beeko Agency</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
+
                                 </div>
-                                <!-- <div class="swiper testimonial__nav">
+                                <div class="swiper testimonial__nav">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <button><img src="assets/img/images/testi_avatar01.png" alt="img"></button>
+                                            <!-- <button><img src="assets/img/images/testi_avatar01.png" alt="img"></button> -->
                                         </div>
                                         <div class="swiper-slide">
-                                            <button><img src="assets/img/images/testi_avatar02.png" alt="img"></button>
+                                            <!-- <button><img src="assets/img/images/testi_avatar02.png" alt="img"></button> -->
                                         </div>
                                         <div class="swiper-slide">
-                                            <button><img src="assets/img/images/testi_avatar03.png" alt="img"></button>
+                                            <!-- <button><img src="assets/img/images/testi_avatar03.png" alt="img"></button> -->
                                         </div>
                                         <div class="swiper-slide">
-                                            <button><img src="assets/img/images/testi_avatar04.png" alt="img"></button>
+                                            <!-- <button><img src="assets/img/images/testi_avatar04.png" alt="img"></button> -->
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
                                 <div class="testimonial__nav-two">
                                     <button class="testimonial-button-prev"><img src="assets/img/icons/right_arrow.svg"
                                             alt="" class="injectable"></button>
@@ -920,18 +874,17 @@
                         <div class="footer__widget">
                             <h4 class="footer__widget-title footer__widget-title-two">Services</h4>
                             <ul class="footer__widget-link footer__widget-link-two list-wrap">
-                                <li><a href="M-20-Best-RMC-product-Robo-Sand-and-River-Sand.html">M-15 Dumping Grade
-                                        Concrete</a></li>
-                                <li><a href="M-20-Best-RMC-product-Robo-Sand-and-River-Sand.html">M-20
-                                        Best RMC product Robo Sand and River Sand</a></li>
-                                <li><a href="M-25-concrete-Robo-sand-and-River-sand.html">M-25 Concrete
-                                        Robo sand and River sand</a></li>
-                                <li><a href="M-30-high-strength-concrete.html">M-30 High Strength
+                                <li><a href="M-40-very-high-strength-concrete.html">M-40 High Strength
                                         Concrete</a></li>
                                 <li><a href="M-35-high-strength-concrete.html">M-35 High Strength
                                         Concrete</a></li>
-                                <li><a href="M-40-very-high-strength-concrete.html">M-40 High Strength
+                                <li><a href="M-30-high-strength-concrete.html">M-30 High Strength
                                         Concrete</a></li>
+                                <li><a href="M-25-concrete-Robo-sand-and-River-sand.html">M-25 Concrete
+                                        Robo sand and River sand</a></li>
+                                <li><a href="M-20-Best-RMC-product-Robo-Sand-and-River-Sand.html">M-20
+                                        Best RMC product Robo Sand and River Sand</a></li>
+                                <li><a href="M-15-dumping-grade.html">M-15 dumping grade</a></li>
                             </ul>
                         </div>
                     </div>
@@ -975,6 +928,8 @@
                     <div class="col-md-6">
                         <div class="copyright__content-two">
                             <p>Copyright © Future Build Concrete | All Right Reserved</p>
+                            <p>Developed By <a href="www.voxstudio.io" style="color: white;">VOX Advertising Studio</a>
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-6">

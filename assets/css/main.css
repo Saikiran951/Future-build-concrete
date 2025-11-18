@@ -1270,7 +1270,7 @@ textarea {
   text-transform: capitalize;
 }
 .breadcrumb__content .breadcrumb > * a {
-  color: #939AC6;
+  color: #ffffff;
 }
 .breadcrumb__content .breadcrumb > * a:hover {
   color: var(--tg-theme-primary);
@@ -1279,7 +1279,7 @@ textarea {
   line-height: 1;
   font-size: 16px;
   font-weight: 700;
-  color: #939AC6;
+  color: #ffffff;
 }
 .breadcrumb__content-two {
   text-align: center;
@@ -23213,7 +23213,7 @@ blockquote cite {
   }
 }
 .copyright__content-two p {
-  color: #878BA8;
+  color: #ffffff;
   margin-bottom: 0;
   font-size: 15px;
 }
@@ -23231,7 +23231,7 @@ blockquote cite {
   margin-bottom: 0;
   font-size: 15px;
   text-align: center;
-  color: #878BA8;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */
