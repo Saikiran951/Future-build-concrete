@@ -3885,6 +3885,11 @@ textarea {
   .banner__area-two {
     padding: 110px 0 100px;
   }
+.banner__bg {
+  /* display: none; */
+  opacity: 0.2 !important;
+}
+
 }
 .banner__area-two::before {
   content: "";
@@ -21756,7 +21761,7 @@ blockquote cite {
 }
 .contact-map {
   width: 100%;
-  height: 420px;
+  height: 520px;
 }
 @media (max-width: 1199.98px) {
   .contact-map {
