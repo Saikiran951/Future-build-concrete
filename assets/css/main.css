@@ -11861,7 +11861,7 @@ textarea {
 }
 @media (max-width: 767.98px) {
   .counter__item .count {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 .counter__item p {
